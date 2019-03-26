@@ -1,0 +1,17 @@
+.content {
+  min-height: 77vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  .box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 426px) {
+  .content {
+    .box {
+      width: 370px;
+    }
+  }
+}

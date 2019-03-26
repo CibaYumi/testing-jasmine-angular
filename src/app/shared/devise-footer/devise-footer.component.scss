@@ -1,0 +1,19 @@
+.footer {
+  background-image: url('../../../assets/imgs/bg-front.svg');
+  background-position: center 20px;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  height: 12%;
+  margin: 0px auto;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 426px) {
+  .footer {
+    background-position: center 28px;
+    height: 12vh;
+    background-size: 1000px;
+  }
+}

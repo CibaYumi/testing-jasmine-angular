@@ -1,0 +1,300 @@
+/* ==================== KEYFRAMES ================== */
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+@-moz-keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+@-webkit-keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+@-o-keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+/* ===================== COMMONS ====================== */
+html,
+body {
+  background-color: #fff!important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+p,
+b,
+div,
+input,
+button {
+  font-family: 'Mukta', sans-serif!important;
+}
+body {
+  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+}
+button,
+input,
+a {
+  outline: 0!important;
+}
+a {
+  cursor: pointer!important;
+}
+button {
+  cursor: pointer!important;
+  position: relative;
+  overflow: hidden;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #6d41ff;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #443182;
+}
+
+/* ==================== LOAD ================== */
+load{
+  /* background-image: url('../../assets/imgs/load.gif'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6vw;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 999;
+  opacity: .98;
+  padding-top: 60vh;
+  text-align: center;
+}
+_load_{
+  overflow: hidden !important;
+}
+
+/* ================= SCROLL ANIMATION ON NAVBAR =============== */
+nav.navbar.scrollBarAnimation {
+  background-color: #fff!important;
+  height: 6.5vh!important;
+  padding: 0 1rem!important;
+  position: fixed!important;
+  -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+  box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+  transition: ease 0.3s;
+}
+nav.navbar.scrollBarAnimation svg {
+  width: 50px!important;
+  height: 50px!important;
+  transition: ease 0.3s;
+}
+nav.navbar.scrollBarAnimation button {
+  margin: 10px 0!important;
+  transition: ease 0.3s;
+}
+
+/* =============== BUTTONS ============== */
+button.btn_greyBorder {
+  border-radius: 200px;
+  border: 2px solid #EAEAEC;
+  background-color: #fff;
+}
+button.btn_greyBorder:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(179, 179, 179, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+button.btn_greyBorder:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+button.btn_greyBorder:hover,
+button.btn_greyBorder:focus,
+button.btn_greyBorder:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button.btn_purple {
+  border-radius: 200px;
+  border: 2px solid #7626FF;
+  background-color: #7626FF;
+}
+button.btn_purple:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  -webkit-transform: scale(1, 1) translate(-50%);
+  -ms-transform: scale(1, 1) translate(-50%);
+  -o-transform: scale(1, 1) translate(-50%);
+  transform: scale(1, 1) translate(-50%);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+button.btn_purple:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+button.btn_purple:hover,
+button.btn_purple:focus,
+button.btn_purple:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button.btn_whiteBorder {
+  border-radius: 200px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+}
+button.btn_whiteBorder:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+button.btn_whiteBorder:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+button.btn_whiteBorder:hover,
+button.btn_whiteBorder:focus,
+button.btn_whiteBorder:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button.btn_purpleCircle {
+  border: 1px solid #bea8ff;
+  background-color: transparent;
+  border-radius: 200px;
+}
+button.btn_purpleCircle:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(109, 65, 255, 0.2);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+button.btn_purpleCircle:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+button.btn_purpleCircle:hover,
+button.btn_purpleCircle:focus,
+button.btn_purpleCircle:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

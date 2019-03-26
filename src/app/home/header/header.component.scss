@@ -1,0 +1,36 @@
+nav {
+  padding: 0 15px;
+  &.navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    display: block;
+    z-index: 999;
+    transition: ease 0.3s;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    a {
+      svg {
+        transition: ease 0.3s;
+      }
+    }
+    button {
+      float: right;
+      &.btn_greyBorder {
+        width: 124px;
+        height: 36px;
+        color: #585859;
+        font-size: 1rem;
+        font-weight: 400;
+        float: right;
+        transition: ease 0.3s;
+        margin-top: 18px;
+      }
+    }
+  }
+}
+

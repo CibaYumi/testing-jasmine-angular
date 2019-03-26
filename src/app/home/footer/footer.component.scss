@@ -1,0 +1,90 @@
+footer {
+  background-image: url('../../../assets/imgs/bg-front.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-color: white;
+  position: relative;
+  bottom: 0vh;
+  width: 100%;
+  padding: 1rem 20px 1rem;
+  .container {
+    text-align: center;
+    .justify-content-start {
+      padding-bottom: 3rem;
+    }
+    .row {
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0 15px;
+        li {
+          color: #000;
+          font-weight: 400;
+          text-align: center;
+          z-index: 999;
+          padding: 5px 15px;
+          a {
+            color: #000;
+            &:hover {
+              text-decoration: none;
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+      }
+    }
+    small {
+      color: #000;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-position: 350px 0;
+    padding-top: 1rem;
+    .container {
+      .row {
+        ul {
+          li {
+            text-align: left;
+          }
+        }
+      }
+      .justify-content-start {
+        padding-bottom: 7rem;
+      }
+      small {
+        color: #000;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media screen and (min-width: 860px) {
+  footer {
+    background-position: 470px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    background-position: 660px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    background-position: 895px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    background-position: 1048px 0;
+  }
+}
+@media screen and (min-width: 1960px) {
+  footer {
+    background-position: center 190px;
+  }
+}

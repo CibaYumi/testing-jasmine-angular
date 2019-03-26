@@ -1,0 +1,139 @@
+h2 {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #585859;
+  margin-bottom: 30px;
+}
+form {
+  .input_group {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #C2C2C2;
+    padding: 5px 10px;
+    margin-bottom: 2vh;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 400;
+      background-color: #fff;
+      -webkit-appearance: none;
+      &::placeholder {
+        color: #CAD0DC;
+        font-size: 1.1rem;
+        font-weight: 400;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #CAD0DC;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+      &::-ms-input-placeholder {
+        color: #CAD0DC;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+    label {
+      display: none;
+    }
+    .pass_section {
+      input {
+        width: 85%;
+      }
+      a {
+        svg {
+          width: 25px;
+          float: right;
+          padding: 3px 0;
+          path {
+            fill: #CAD0DC!important;
+          }
+        }
+      }
+    }
+  }
+  .btn_section {
+    display: block;
+    width: 100%;
+    margin-bottom: 4vh;
+    button {
+      &.btn_purple {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        &:after {
+          width: 12px;
+        }
+      }
+    }
+  }
+}
+.login {
+  width: 100%;
+  text-align: center;
+  a {
+    color: #0077C5;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  form {
+    display: block;
+    .form_left,
+    .form_right {
+      width: 48%;
+      max-width: 48%;
+      display: inline-block;
+    }
+    .form_left {
+      float: left;
+    }
+    .form_right {
+      float: right;
+    }
+    .btn_section {
+      text-align: center;
+      margin-top: 4vh;
+      button {
+        &.btn_purple {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  form {
+    display: block;
+    .minor_inputs {
+      .input_group {
+        display: inline-block;
+        width: 48%;
+        &.phone,
+        &.neighborhood {
+          float: right;
+        }
+        &.cep {
+          display: inline-block;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
