@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterFormComponent } from './register/register-form/register-form.component';
-import { ShowHidePasswordDirective } from './login/password.directive';
 
 @NgModule({
   imports: [
@@ -16,15 +15,13 @@ import { ShowHidePasswordDirective } from './login/password.directive';
     LoginComponent,
     LoginFormComponent,
     RegisterComponent,
-    RegisterFormComponent,
-    ShowHidePasswordDirective
+    RegisterFormComponent
   ],
   exports: [
     LoginComponent,
     LoginFormComponent,
     RegisterComponent,
-    RegisterFormComponent,
-    ShowHidePasswordDirective
+    RegisterFormComponent
   ]
 })
 export class DeviseModule { }
