@@ -1,13 +1,13 @@
 {
-  "name": "testing-jasmine-angular",
-  "version": "0.0.0",
+  "name": "testing-mocha-angular",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "prepare": "tsc",
+    "test": "nyc mocha",
+    "test-watch": "mocha-typescript-watch"
   },
   "private": true,
   "dependencies": {
@@ -38,21 +38,17 @@
     "@angular/cli": "~7.3.5",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.3",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
     "@types/node": "~8.9.4",
+    "chai": "^4.2.0",
     "codelyzer": "~4.5.0",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.0.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-cli": "^2.0.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.4.0",
+    "mocha": "^6.0.2",
+    "mocha-typescript": "^1.1.17",
+    "nyc": "^13.3.0",
+    "source-map-support": "^0.5.11",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
+    "typescript": "^3.2.4"
   }
 }
